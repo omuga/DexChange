@@ -19,7 +19,7 @@ exports.create_mtgcard = function(req,res){
 
     mtgpost.save(function(error){
         if (error){
-            return next(error);
+            res.status(500);
         } else{
             res.send('Post de carta MTG creado satisfactoriamente');
         }

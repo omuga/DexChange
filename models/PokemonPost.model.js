@@ -9,6 +9,8 @@ var PokemonPostSchema = new Schema({
     rarity: String, 
     date: {type: Date , default: Date.now},
     description: String,
+},{
+    versionKey: false,
 });
 
 
