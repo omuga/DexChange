@@ -1,6 +1,9 @@
 const express = require('express');
+const session = require('express-session');
 const bodyParser = require('body-parser');
 let mongoose = require('mongoose');
+
+
 
 
 const MTGPost = require('./routes/MTGPost.route');
@@ -11,6 +14,12 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+
+app.use(session({
+    secret: "DexChange",
+    resave: true,
+    saveUninitialized: false
+}))
 
 // Uso de Rutas para Cartas 
 app.use('/users', User);
