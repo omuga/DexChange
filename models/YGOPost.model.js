@@ -1,7 +1,7 @@
 const mongoose  = require('mongoose');
 const Schema = mongoose.Schema;
 
-var PokemonPostSchema = new Schema({
+var YGOPostSchema = new Schema({
     title: String,
     type: String,
     foil: Boolean,
@@ -13,4 +13,4 @@ var PokemonPostSchema = new Schema({
 });
 
 
-module.exports = mongoose.model('PokemonPost', PokemonPostSchema);   
+module.exports = mongoose.model('YGOPost', YGOPostSchema);   
