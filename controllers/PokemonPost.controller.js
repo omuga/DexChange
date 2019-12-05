@@ -19,7 +19,7 @@ exports.createNewPokemonCard = function(req,res){
 
     pokemonPost.save(function(error){
         if(error){
-            return next(error);        
+            res.status(500);        
         } else{
             res.send("Carta Pokemon Creada Satisfactoriamente");
         }

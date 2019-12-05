@@ -1,16 +1,16 @@
 const mongoose  = require('mongoose');
 const Schema = mongoose.Schema;
 
-var MTGPostSchema = new Schema({
+var YGOPostSchema = new Schema({
     title: String,
     type: String,
-    colour: String,
+    foil: Boolean,
     rarity: String, 
     date: {type: Date , default: Date.now},
     description: String,
 },{
-    versionKey: false
+    versionKey: false,
 });
 
 
-module.exports = mongoose.model('MTGPost', MTGPostSchema);   
+module.exports = mongoose.model('YGOPost', YGOPostSchema);   
