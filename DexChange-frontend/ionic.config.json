@@ -1,0 +1,7 @@
+{
+  "name": "DexChange",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
