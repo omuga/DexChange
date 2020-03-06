@@ -13,4 +13,4 @@ var PokemonPostSchema = new Schema({
 });
 
 
-module.exports = mongoose.model('PokemonPost', PokemonPostSchema);   
+module.exports = mongoose.model('PokemonPost', PokemonPostSchema); 

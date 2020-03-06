@@ -10,11 +10,13 @@ exports.get_all_mtgcards = function(req,res) {
 exports.create_mtgcard = function(req,res){
     var mtgpost = new MTGPost({
         title: req.body.title,
+        idUser: req.body.iduser,
         type: req.body.type,
         colour: req.body.colour,
         rarity: req.body.rarity,
         date: req.body.date,
         description: req.body.description,
+        imageUrl: req.body.imageurl,
     });
 
     mtgpost.save(function(error){
@@ -47,3 +49,10 @@ exports.deleteCard = function(req,res){
         res.send('Post Borrado Satisfactoriamente');
     });
 };
+
+exports.findCardByUser = function(req,res){
+    MTGPost.find({"idUser":req.params.idUser}, function(err, mtgcards){
+        if (err) throw err;
+        res.send(mtgcards);
+    });
+}
