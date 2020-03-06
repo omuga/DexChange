@@ -57,7 +57,7 @@ Además, se deben instalar las dependencias de Ionic para *NodeJS*:
 npm install -g @ionic/cli
 ```
 
-Cuando se ejecute por primera vez, el sistema exigirá instalar los scripts de React:
+Cuando se ponga en funcionamiento el programa con `ionic serve` por primera vez, el sistema exigirá instalar los scripts de React:
 ```
 [INFO] Looks like react-scripts isn't installed in this project.
 
