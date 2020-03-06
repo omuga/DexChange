@@ -20,8 +20,9 @@ npm install jsonwebtoken
 npm install cors
 ```
 
-Además, debe instalarse la versión actual de (MongoDB)[https://www.mongodb.com/download-center/community?jmp=docs]
+Además, debe instalarse la versión actual de [MongoDB](https://www.mongodb.com/download-center/community?jmp=docs)
 
+### Funcionamiento
 Para ejecutar el servidor Backend a través de la línea de comandos se ejecuta : ```node index```.
 Por defecto se ejecutará en el puerto 3000.
 
@@ -45,7 +46,36 @@ Por defecto se ejecutará en el puerto 3000.
 | PUT      | /pokemoncards/:id            | ./routes/PokemonPost.route         | ../controllers/PokemonPost.controller   | Actualizar una carta particular de Pokemon TCG según id |
 
 
+## Frontend
+### Instalación
+En la carpeta DexChange-frontend están los archivos que corresponden al Frontend. Al igual que en el Backend, también se requiere la previa instalación de *NodeJS*, por lo que se debe ejecutar:
+```
+npm install
+```
+Además, se deben instalar las dependencias de Ionic para *NodeJS*:
+```
+npm install -g @ionic/cli
+```
 
+Cuando se ejecute por primera vez, el sistema exigirá instalar los scripts de React:
+```
+[INFO] Looks like react-scripts isn't installed in this project.
+
+       This package is required for this command to work properly. The package provides a CLI utility, but the
+       react-scripts binary was not found in your PATH.
+
+? Install react-scripts? (Y/n)
+```
+Se debe entonces presionar Y para instalar (esto puede tardar unos minutos).
+
+
+
+### Funcionamiento
+Para ejecutar el servidor, se debe ejecutar el comando:
+```
+ionic serve
+```
 
 
 ## Referencias
+- [MongoDB](https://www.mongodb.com/download-center/community?jmp=docs)
