@@ -1,7 +1,7 @@
 # DexChange
 ***DexChange*** es una aplicación móvil que facilita el intercambio de cartas para juegos de cartas coleccionables como **Pokemon TCG**, **Magic the Gathering** o **Yu-Gi-Oh**.
 
-Entre las funcionalidades de la aplicacion, se puede encontrar :
+Entre las funcionalidades de la aplicación, se puede encontrar :
 * Catálogo de cartas ofrecidas por la comunidad
 * Sistema de rating para los vendedores y compradores
 * Chat entre oferente y demandante para poder realizar cualquier consulta
@@ -57,7 +57,7 @@ Además, se deben instalar las dependencias de Ionic para *NodeJS*:
 npm install -g @ionic/cli
 ```
 
-Cuando se ponga en funcionamiento el programa con `ionic serve` por primera vez, el sistema exigirá instalar los scripts de React:
+Cuando se ponga en funcionamiento el software con `ionic serve` por primera vez, el sistema exigirá instalar los scripts de React:
 ```
 [INFO] Looks like react-scripts isn't installed in this project.
 
@@ -75,6 +75,7 @@ Para ejecutar el servidor, se debe ejecutar el comando:
 ```
 ionic serve
 ```
+**Nota**:Para que funcione correctamente, también debe estar ejecutandose el servidor Backend
 
 
 ## Referencias
